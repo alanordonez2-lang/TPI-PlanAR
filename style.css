@@ -1,4 +1,3 @@
-/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
     color: #333;
 }
 
-/* Estilos del título principal */
+/* Estilos del título principal y primer párrafo */
 h1 {
     text-align: center;
     color: white;
@@ -23,7 +22,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* Estilos del párrafo introductorio */
+
 body > p {
     max-width: 800px;
     margin: 0 auto 40px auto;
@@ -37,7 +36,7 @@ body > p {
     backdrop-filter: blur(10px);
 }
 
-/* Contenedor de tarjetas - Grid */
+/* Parte de tarjetas*/
 .contenedor-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -47,7 +46,7 @@ body > p {
     padding: 20px;
 }
 
-/* Estilos de cada tarjeta */
+
 .tarjeta {
     background: white;
     border-radius: 15px;
@@ -59,24 +58,12 @@ body > p {
     overflow: hidden;
 }
 
-/* Efecto hover en tarjetas */
 .tarjeta:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-/* Línea decorativa en la parte superior de cada tarjeta */
-.tarjeta::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-}
 
-/* Estilos de los títulos dentro de las tarjetas */
 .tarjeta h2 {
     color: #2d3748;
     font-size: 1.5rem;
@@ -84,7 +71,6 @@ body > p {
     font-weight: 600;
 }
 
-/* Estilos de los párrafos dentro de las tarjetas */
 .tarjeta p {
     color: #b52424;
     font-size: 20px;
@@ -98,16 +84,15 @@ body > p {
     object-fit: cover; /* Recorta la imagen para que llene el espacio sin distorsionar */
     border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
     margin-bottom: 15px; /* Espacio debajo de la imagen */
-    transition: transform 0.3s ease; /* Transición suave para efectos */
+    transition: transform 0.5s; /* Transición suave para efectos */
     border-radius: 10px;
 }
 
-/* Efecto hover en la imagen */
 .tarjeta:hover img {
-    transform: scale(1.05); /* La imagen crece ligeramente al hacer hover en la tarjeta */
+    transform: scale(1.15);
 }
 
-/* Estilos de la sección de botones */
+/* Estilos de la section de botones */
 .section-botones {
     text-align: center;
     max-width: 800px;
@@ -119,7 +104,6 @@ body > p {
     gap: 15px;
 }
 
-/* Estilos de los botones */
 button {
     background: white;
     border: none;
@@ -135,15 +119,13 @@ button {
     letter-spacing: 1px;
 }
 
-/* Efectos hover en botones */
 button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     background: #667eea;
     color: white;
 }
-
-/* Efecto active en botones */
+    
 button:active {
     transform: translateY(0px);
 }
