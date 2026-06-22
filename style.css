@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #98a6e0 0%, #796192 100%);
+    background: linear-gradient(135deg, #aeb4d0 0%, #886aa7 100%);
     min-height: 100vh;
     padding: 40px 20px;
     color: #333;
@@ -34,7 +34,7 @@ body > p {
     backdrop-filter: blur(10px);
 }
 
-
+/* Parte de tarjetas*/
 .contenedor-tarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -44,7 +44,6 @@ body > p {
     padding: 20px;
 }
 
-/* Estilos de cada tarjeta */
 .tarjeta {
     background: white;
     border-radius: 15px;
@@ -56,24 +55,11 @@ body > p {
     overflow: hidden;
 }
 
-/* Efecto hover en tarjetas */
 .tarjeta:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
-/* Línea decorativa en la parte superior de cada tarjeta */
-.tarjeta::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-}
-
-/* Estilos de los títulos dentro de las tarjetas */
 .tarjeta h2 {
     color: #2d3748;
     font-size: 1.5rem;
@@ -81,26 +67,29 @@ body > p {
     font-weight: 600;
 }
 
-/* Estilos de los párrafos dentro de las tarjetas */
 .tarjeta p {
-    color: #718096;
-    line-height: 1.6;
+    color: #b52424;
+    font-size: 20px;
+    line-height: 3.6;
     margin-bottom: 10px;
 }
 
-/* Estilo especial para el primer párrafo de cada tarjeta (fecha) */
-.tarjeta p:first-of-type {
-    color: #667eea;
-    font-weight: bold;
-    font-size: 1.1rem;
+.tarjeta img {
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin distorsionar */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    transition: transform 0.5s; /* Transición suave para efectos */
+    border-radius: 10px;
 }
 
+.tarjeta:hover img {
+    transform: scale(1.15);
+}
 
-
-/* Estilo de botones */
-
-.section-botones {
-    
+/* Estilos de la section de botones */
+.botones {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -109,7 +98,6 @@ body > p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-
 }
 
 button {
@@ -127,16 +115,28 @@ button {
     letter-spacing: 1px;
 }
 
-/* Efectos hover en botones */
 button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     background: #667eea;
     color: white;
 }
-
-/* Efecto active en botones */
+    
 button:active {
     transform: translateY(0px);
+}
+
+h3 {
+     color: #2d3748;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.mensaje {
+    color: #7591c2;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
