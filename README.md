@@ -28,3 +28,10 @@ Botón "Volver al inicio".
 # Diseño de Arquitectura
 <img width="851" height="158" alt="image" src="https://github.com/user-attachments/assets/999d32f1-6e0c-48c8-b220-f4c4d2393dc6" />
 
+
+#Changelog:
+* Actualizamos el nombre de "section-botones" a "botones" dentro de la hoja stle.css para que coincidan con los actuales <section class="botones"> y le agregamos la clase="botones" a la botonera para que salgan con el mismo estilo de la página también.
+
+* Despues a los div de salida de la botonera le agregamos la class="mensaje" para que salgan con el estilo de la página
+<div id="mensaje" class="mensaje"></div> y <div id="categorias" class="mensaje"></div> respectivamente.
+
