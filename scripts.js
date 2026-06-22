@@ -7,7 +7,7 @@ function Mostrar()
 {
     const categorias = [" Conciertos", "Ferias", "Deportes"];
 
-    let contenido = "<h3>Categorías disponibles: <br></h3><ul>";
+    let contenido = "<h3>Categorías disponibles:</h3><ul>";
 
     categorias.forEach(categoria => { contenido += `<li>${categoria}</li>`; });
 
