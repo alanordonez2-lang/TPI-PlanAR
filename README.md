@@ -7,8 +7,8 @@ Ordoñez Alan y Echegaray Santiago
 PlanAR es una aplicación web desarrollada para la gestión y visualización de eventos. Permite a los usuarios consultar eventos disponibles, realizar reservas y visualizar distintas categorías de eventos de manera dinámica.
 
 # TECNOLOGIAS UTILIZADAS:
-HTML5
-CSS3
+HTML
+CSS
 JavaScript
 Git
 GitHub
